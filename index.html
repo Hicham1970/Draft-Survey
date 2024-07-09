@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container flex flex-col lg:flex-row bg-background text-foreground p-4">
+        <div class="flex-1 grid grid-cols-2 gap-4">
+            <div>
+                <label for="Nationality" title="nationality">Nationality</label>
+                <input type="text" class="class1" id="nationality" placeholder="Nationality" name="Nationality"
+                    value="IRELAND" />
+                <label for="portOfRegistry" title="Port of Registry">Port of Registry</label>
+                <input type="text" class="class1" placeholder="Port Of Registry" name="portOfRegistry" value="ARKLOW" />
+                <label for="vessel" title="Vessel">Vessel</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="vessel"
+                    placeholder="Vessel" value="ARKLOW COVE" />
+                <label for="cargo" title="Cargo">Cargo</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="cargo"
+                    placeholder="Cargo" value="STEEL SCRAP" />
+                <label for="port" title="Port">Port</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="port" placeholder="Port"
+                    value="CASABLANCA" />
+                <label for="portOfLoading" title="Port of Loading">Port of Loading</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="portOfLoading"
+                    placeholder="Port of Loading" value="LIMERICK UK" />
+                <label for="portOfDischarge" title="Port of Discharge">Port of Discharge</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="portOfDischarge"
+                    placeholder="Port of Discharge" value="CASABLANCA" />
+                <label for="blWeight" title="B/L Weight">B/L Weight</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="blWeight"
+                    placeholder="B/L Weight" value="4,333,365" />
+                <label for="blDate" title="B/L Date">B/L Date</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="blDate"
+                    placeholder="B/L Date" value="22/06/204" />
+            </div>
+            <div>
+                <label for="grossWeight" title="Gross weight (MT)">Gross weight (MT)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="grossWeight"
+                    placeholder="Gross weight (MT)" value="2,999,000" />
+                <label for="netWeight" title="Net Weight (MT)">Net Weight (MT)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="netWeight"
+                    placeholder="Net Weight (MT)" value="2,992,000" />
+                <label for="summerDraft" title="Summer Draft (en m)">Summer Draft (en m)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="summerDraft"
+                    placeholder="Summer Draft (en m)" value="6,273" />
+                <label for="summerFreeboard" title="Summer Freeboard (en m)">Summer Freeboard (en m)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="summerFreeboard"
+                    placeholder="Summer Freeboard (en m)" value="11,000" />
+                <label for="summerDeadweight" title="Summer Deadweight (MT)">Summer Deadweight (MT)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="summerDeadweight"
+                    placeholder="Summer Deadweight (MT)" value="5,061,000" />
+                <label for="lightShip" title="Light Ship (MT)">Light Ship (MT)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="lightShip"
+                    placeholder="Light Ship (MT)" value="1,526,400" />
+                <label for="constanteDeclared" title="Constante declared (MT)">Constante declared (MT)</label>
+                <input type="text" class="w-full bg-input text-primary-foreground p-2 mb-2" id="constanteDeclared"
+                    placeholder="Constante declared (MT)" value="45,000" />
+            </div>
+        </div>
+        <div class="flex-1 flex flex-col items-center mt-4 lg:mt-0">
+            <button class="bg-accent text-accent-foreground p-2 mb-2 w-full">DS_REPORT</button>
+            <button class="bg-accent text-accent-foreground p-2 mb-2 w-full">Details</button>
+            <button class="bg-accent text-accent-foreground p-2 mb-2 w-full">Deductables</button>
+            <button class="bg-accent text-accent-foreground p-2 mb-2 w-full">ULD</button>
+            <button class="bg-accent text-accent-foreground p-2 mb-2 w-full">Holds Insp</button>
+        </div>
+    </div>
+    <div class="mt-4 bg-background text-foreground p-4">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+                <span class="block">INITIAL</span>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="99,00" />
+                    <span class="p-2">A</span>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="790,00" />
+                    <span class="p-2">A</span>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="0,00" />
+                    <span class="p-2">A</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <span class="block">FINAL</span>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="99,00" />
+                    <span class="p-2">A</span>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="790,00" />
+                    <span class="p-2">A</span>
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" class="w-1/3 bg-input text-primary-foreground p-2 mb-2" value="0,00" />
+                    <span class="p-2">A</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+
+</html>

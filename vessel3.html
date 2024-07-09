@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time sheet Formulaire</title>
+    <link rel="stylesheet" href="vessel.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="arrival">Vessel arrived</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="arrivalDate" name="arrivalDate" placeholder="arrival.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="berthingDate">Vessel berthed on</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="berthingDate" name="berthingDate" placeholder="berthingDate.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="InitialDraftSurveyCommenced">Initial Survey commenced</label>
+                </div>
+                <div class="col-75">
+                    <select id="InitialDraftSurveyCommenced" name="InitialDraftSurveyCommenced">
+                        <option value="CASABLANCA">Casablanca</option>
+                        <option value="Agadir">Agadir</option>
+                        <option value="Nador">Nador</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="vessel">Initial Survey completed </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="InitialDraftSurveyCommenced" name="InitialDraftSurveyCommenced"
+                        placeholder="InitialDraftSurveyCommenced.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="OperationCommenced">Operation commenced</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="OperationCommenced" name="OperationCommenced"
+                        placeholder="OperationCommenced.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="loadingPort">Operation completed </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="OperationCompleted" name="OperationCompleted"
+                        placeholder="OperationCompleted.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="FinalDraftSurveyCommenced">Final Survey commenced</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="FinalDraftSurveyCommenced" name="FinalDraftSurveyCommenced"
+                        placeholder="FinalDraftSurveyCommenced.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="BlWeight">Final Survey completed </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="FinalDraftSurveyCompleted" name="FinalDraftSurveyCompleted"
+                        placeholder=".." />
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <input type="submit" value="Submit" />
+            </div>
+
+    </div>
+
+    </form>
+    </div>
+
+</body>
+
+</html>
